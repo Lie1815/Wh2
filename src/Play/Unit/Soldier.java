@@ -15,7 +15,7 @@ public class Soldier extends BandUnit {
     }
 
     public int Rest() {
-
+return extrapointhp;
     }
 }
 

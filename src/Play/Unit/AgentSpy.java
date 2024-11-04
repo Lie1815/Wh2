@@ -14,6 +14,6 @@ public class AgentSpy extends BandUnit {
     }
 
     public int Rest() {
-
+return extrapointsattack;
     }
 }
