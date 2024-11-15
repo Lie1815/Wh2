@@ -11,7 +11,5 @@ public class BigBoss extends Unit {
     public BigBoss(int hitpoints) {
         super(hitpoints);
     }
-    public int Rest() {
-    getHitpoints()
-    }
+
 }
