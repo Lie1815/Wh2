@@ -9,7 +9,7 @@ public class Spider extends Pets{
     @Override
     public void eat() {
         System.out.println("ест");
-        return 0;
+
     }
 
     @Override
