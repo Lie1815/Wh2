@@ -6,11 +6,7 @@ import java.time.format.DateTimeFormatter;
 
 
 
-public class App extends Task{
-
-    public App(String title, LocalDate date, String discription) {
-        super(title, date, discription);
-    }
+public class App {
 
     public static void main(String[] args) {
         TaskManager taskManager = new TaskManager();
