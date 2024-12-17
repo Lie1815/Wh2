@@ -20,23 +20,32 @@ public class Main {
         Mice mice6 = new Mice(5);
 
         cats1.catchmouse(mice1);
-        cats1.catchmouse(mice1);
+        cats1.catchmouse(mice3);
         cats2.catchmouse(mice2);
-        cats2.catchmouse(mice2);
-        cats3.catchmouse(mice3);
-        cats3.catchmouse(mice3);
-        cats4.catchmouse(mice4);
-        cats4.catchmouse(mice4);
-        cats5.catchmouse(mice5);
-        cats5.catchmouse(mice5);
-        cats6.catchmouse(mice6);
-        cats6.catchmouse(mice6);
+        cats2.catchmouse(mice5);
 
+        System.out.println("-----------------------------------------------------------");
+
+        cats3.catchmouse(mice6);
+        cats3.catchmouse(mice3);
+        cats4.catchmouse(mice1);
+        cats4.catchmouse(mice4);
+
+        System.out.println("-----------------------------------------------------------");
+        cats5.catchmouse(mice5);
+        cats5.catchmouse(mice2);
+        cats6.catchmouse(mice6);
+        cats6.catchmouse(mice1);
+
+
+        System.out.println("-----------------------------------------------------------");
         cats6.attackCat(cats1);
         cats3.attackCat(cats2);
         cats1.attackCat(cats4);
         cats5.attackCat(cats3);
         cats2.attackCat(cats6);
+
+        System.out.println("-----------------------------------------------------------");
 
         System.out.println(cats1.getname() + " поймал в сумме: " + cats1.getCaughtMice().size() + " мышей.");
         System.out.println(cats2.getname() + " поймал в сумме: " + cats2.getCaughtMice().size() + " мышей.");
