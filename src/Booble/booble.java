@@ -1,3 +1,5 @@
+package Booble;
+
 public class booble {
     static void printMass(int [] arr){
         for(int i = 0; i < arr.length; i++){
@@ -17,7 +19,7 @@ public class booble {
         int[] array = new int[500];
 
         for(int i = 0; i<array.length; i++){
-            array[i] = (int) Math.floor(Math.random()*1000);
+            array[i] = (int) Math.floor(Math.random()*1000 );
         }
         while(!check(array)){
             for (int i = 0; i < array.length-1; i++) {
