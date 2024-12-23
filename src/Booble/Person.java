@@ -25,10 +25,10 @@ public class Person {
     }
 
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", age=" + age +
+        return "Person  " +
+                "name= '" + name + '\'' +
+                ", lastname= '" + lastname + '\'' +
+                ", age= " + age +
                 '}';
     }
 }
