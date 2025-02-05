@@ -1,5 +1,8 @@
 package Bank;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Account {
     private String name;
     private String accountnumber;
@@ -22,6 +25,7 @@ public class Account {
     }
     public void addMoney(double amount){
         balance += amount;
+        System.out.println("перевод");
     }
     public void payment(double amount, Account user){
         if (customertype.equals("Базовый")) {
@@ -33,13 +37,15 @@ public class Account {
         balance -= amount;
         user.balance += amount;
     }
+
+
     public void servispay(double amount) throws Exception {
         if(pervayaOperaciya){
             balance += 1000;
             pervayaOperaciya = false;
         }
         if (amount > balance) {
-            throw new Exception("недостаточно средств");
+            throw new Exception("недостаточно средств для оплаты ");
         }
         if (amount <= 0) {
             throw new IllegalArgumentException("Сумма оплаты должна быть положительной.");
@@ -48,6 +54,8 @@ public class Account {
         balance -= amount;
         calculatorCashback(amount);
     }
+
+
     private void calculatorCashback(double amount){
         switch (customertype){
             case "Базовый" -> {

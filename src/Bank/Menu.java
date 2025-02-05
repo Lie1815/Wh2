@@ -1,5 +1,8 @@
 package Bank;
 
+import javax.swing.*;
+import java.awt.*;
+
 public class Menu {
     public static void main(String[] args) {
         Account ac1 = new Account("Арсен Владимировач Иванов",  "Базовый клиент");
@@ -26,7 +29,8 @@ public class Menu {
         a1.addMoney(1000);
         a1.payment(727, a3);
         a3.payment(745, a5);
-        acco2.payment(627, a4);
+        acco2.payment(627, a1);
+
 
 
 
@@ -34,7 +38,7 @@ public class Menu {
         System.out.println(a3.getBalance());
         System.out.println(acco2.getBalance());
 
-
+        System.out.println();
 
         ac2.addMoney(1000);
 
